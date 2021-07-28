@@ -141,21 +141,21 @@ class BankLoanProgram{
 		try{
 			t1.join();
 		}catch(Exception e){}
-		System.out.println("\nFinding EMI for loan paid");
-		MyThread m2=new MyThread(2,cust_cibil,cust_past_loan,acno,ob);
-		Thread t2=new Thread(m2);
-		t2.start();
+			System.out.println("\nFinding EMI for loan paid");
+			MyThread m2=new MyThread(2,cust_cibil,cust_past_loan,acno,ob);
+			Thread t2=new Thread(m2);
+			t2.start();
 		try{
 			t2.join();
 		}catch(Exception e){}
-		MyThread m3=new MyThread(3,cust_cibil,cust_past_loan,acno,ob);
-		Thread t3=new Thread(m3);
-		t3.start();
+			MyThread m3=new MyThread(3,cust_cibil,cust_past_loan,acno,ob);
+			Thread t3=new Thread(m3);
+			t3.start();
 		try{
 			t3.join();
 		}catch(Exception e){}
-		MyThread m4=new MyThread(4,cust_cibil,cust_past_loan,acno,ob);
-		Thread t4=new Thread(m4);
-		t4.start();
+			MyThread m4=new MyThread(4,cust_cibil,cust_past_loan,acno,ob);
+			Thread t4=new Thread(m4);
+			t4.start();
 	}
 }
